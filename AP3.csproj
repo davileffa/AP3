@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <Content Include="Program.cs" />
+    <Content Include="Startup.cs" />
+    <Content Include="Domain\Entities\Autor.cs" />
+    <Content Include="Domain\Entities\Usuario.cs" />
+    <Content Include="Domain\Interfaces\IAutorRepository.cs" />
+    <Content Include="Domain\Interfaces\ILivroRepository.cs" />
+    <Content Include="Data\Repositories\AutorRepository.cs" />
+    <Content Include="Data\Repositories\LivroRepository.cs" />
+    <Content Include="Controllers\LivrosController.cs" />
+    <Content Include="Controllers\UsuariosController.cs" />
+    <Content Include="Controllers\AutoresController.cs" />
+    <Content Include="Data\BibliotecaContext.cs" />
+    <Content Include="Domain\DTOs\UsuarioDTO.cs" />
+    <Content Include="Domain\DTOs\LivroDTO.cs" />
+    <Content Include="Domain\DTOs\AutorDTO.cs" />
+    <Content Include="Data\Repositories\UsuarioRepository.cs" />
+    <Content Include="AP3.db" />
+    <Content Include="Migrations\BibliotecaContextModelSnapshot.cs" />
+    <Content Include="appsettings.json" />
+    <Content Include="Domain\ViewModels\EmprestimoViewModel.cs" />
+    <Content Include="Domain\Entities\Livro.cs" />
+    <Content Include="Domain\ViewModels\DevolucaoViewModel.cs" />
+    <Content Include="Domain\ViewModels\DevolucaoViewModel" />
+    <Content Include="Domain\ViewModels\UsuarioViewModel.cs" />
+    <Content Include="Domain\ViewModels\AutorViewModel.cs" />
+    <Content Include="MappingProfiles\AutorProfile.cs" />
+    <Content Include="MappingProfiles\UsuarioProfile.cs" />
+    <Content Include="MappingProfiles\LivroProfile.cs" />
+    <Content Include="Domain\Interfaces\IUsuarioRepository.cs" />
+    <Content Include="Domain\Interfaces\IBaseRepository.cs" />
+    <Content Include="Domain\ViewModels\LivroViewModel.cs" />
+    <Content Include="MappingProfiles\MeuAutorProfile.cs" />
+    <Content Include="Controllers\EmprestimoController.cs" />
+    <Content Include="Controllers\DevolucaoController.cs" />
+  </ItemGroup>
+</Project>
